@@ -7,11 +7,11 @@ console.log(transactionDate)
 
 //configuration
 
-const shared_secret = ''
-const enterprise_id = ''
-const client_id = ''
+const sharedSecret =  process.env.SHARED_SECRET
+const enterprise_id = process.env.ENTERPRISE_ID
+const client_id = process.env.CLIENT_ID
 
-const hmac = crypto.createHmac('sha256', shared_secret)
+const hmac = crypto.createHmac('sha256', sharedSecret)
 
 // requester
 const enterpriseID = enterprise_id

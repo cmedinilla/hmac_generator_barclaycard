@@ -1,11 +1,15 @@
-  npm install
+# hmac_generator_barclaycard
 
-Fill these 3 fields with your Barclaycard configuration:
+    npm install
 
-  const shared_secret = ''
-  const enterprise_id = ''
-  const client_id = ''
+Copy .env-template file and rename it as .env and configure the following:
 
-  npm start
+    SHARED_SECRET=xxxxx
+    ENTERPRISE_ID=xxxxx
+    CLIENT_ID=xxxx
 
-  You will receive in console a beginWebPayment request for testing
+Run with:
+
+    npm start
+
+You will receive in console a beginWebPayment request for testing
